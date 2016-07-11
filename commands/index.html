@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://typicalbot.ml">
+		<meta property="og:title" content="TypicalBot => The Ultimate Discord Bot">
+		<meta property="og:description" content="TypicalBot is an awesome bot with a ton of features that are super easy to use.">
+		<meta property="og:site_name" content="TypicalBot">
+		<meta property="og:image" content="/tbemblem.png">
+		<link href="https://fonts.googleapis.com/css?family=Fugaz+One" rel="stylesheet" type="text/css">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://s.mlcdn.co/bootstrap.css">
+		<link href="/style.css" rel="stylesheet" type="text/css">
+		<link href="/tbemblem.png" rel="icon" type="image/x-icon"/>
+		<title>Command Documentation — TypicalBot</title>
+	</head>
+	<body>
+		<nav class="navbar navbar-default navbar-statis-top">
+            <div class="container">
+                <div class="navbar-header"><a class="navbar-brand navbar-head" href="/">TypicalBot</a></div>
+                <ul class="nav navbar-nav navbar-right navbar-link-list">
+                    <li><a href="https://discord.me/typicalbot" target="_blank" class="tab">Join our Server</a></li>
+                    <li><a href="javascript:window.open('https://discordapp.com/oauth2/authorize?&client_id=166527505610702848&scope=bot&permissions=32014&redirect_uri=http://typicalbot.ml/thanks/&response_type=code', 'TBOAUTH', 'width=495,height=600')" class="tab">Invite TypicalBot</a></li>
+                </ul>
+            </div>
+        </nav>
+		<!--			END NAVIGATION BAR				-->
+		<!--			LEFT COLUMN						-->
+		<div class="container col-md-2">
+            <ul class="list-group">
+                <li class="list-group-item"><span class="badge" id="stats_servers"></span>Servers</li>
+                <li class="list-group-item"><span class="badge" id="stats_channels"></span>Channels</li>
+                <li class="list-group-item"><span class="badge" id="stats_users"></span>Users</li>
+                <li class="list-group-item"><span class="badge" id="stats_messages"></span>Messages</li>
+                <li class="list-group-item"><span class="badge" id="stats_commands"></span>Commands</li>
+            </ul>
+            <hr>
+            <ul class="nav nav-pills nav-stacked">
+                <li role="presentation" class=""><a href="/">Home</a></li>
+                <li role="presentation" class="active"><a href="/commands/">Documentation</a></li>
+            </ul>
+		</div>
+		<!--			END LEFT COLUMN					-->
+        <!--			RIGHT COLUMN					-->
+		<div class="container col-md-10">
+            <h2>New table will be made soon.</h2>
+            <div class="docs">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#everyone" aria-controls="home" role="tab" data-toggle="tab">Everyone</a></li>
+                    <li role="presentation"><a href="#bot-commander" aria-controls="profile" role="tab" data-toggle="tab">TypicalBot Admin</a></li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content" id="commands">
+                    <div role="tabpanel" class="tab-pane fade in active" id="everyone">
+                        [] = required, () = optional
+                        <table class=table>
+                    <thead>
+                      <tr>
+                        <th>Command</th>
+                        <th>Parameters</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope=row>$changelog</th>
+                                    <td></td>
+                                    <td>Gives you my change log.</td>
+                                    <td>$changelog</td>
+                      </tr>
+                                <tr>
+                        <th scope=row>$ping</th>
+                                    <td></td>
+                                    <td>Just to check to see if TypicalBot is working.</td>
+                                    <td>$ping</td>
+                      </tr>
+                                <tr>
+                        <th scope=row>$commands</th>
+                                    <td></td>
+                                    <td>Gives you a list of commands</td>
+                                    <td>$commands</td>
+                      </tr>
+                                <tr>
+                        <th scope=row>$cmds</th>
+                                    <td></td>
+                                    <td>Gives you a list of commands</td>
+                                    <td>$cmds</td>
+                      </tr>
+                                <tr>
+                        <th scope=row>$help</th>
+                                    <td></td>
+                                    <td>Get some help with TypicalBot!</td>
+                                    <td>$help</td>
+                      </tr>
+                                <tr>
+                                    <th scope=row>$shoot</th>
+                                    <td>(@USER)</td>
+                                    <td>Digitally shoot a user by mentioning them.</td>
+                                    <td>$shoot @Hackzzila</td>
+                                </tr>
+                                <tr>
+                                    <th scope=row>$stab</th>
+                                    <td>(@USER)</td>
+                                    <td>Digitally stab a user by mentioning them.</td>
+                                    <td>$stab @Hackzzila</td>
+                                </tr>
+                                <tr>
+                                    <th scope=row>$cat</th>
+                                    <td></td>
+                                    <td>Sends you a cute cat.</td>
+                                    <td>$cat</td>
+                                </tr>
+                                <tr>
+                                    <th scope=row>$dog</th>
+                                    <td></td>
+                                    <td>Sends you a cute dog.</td>
+                                    <td>$dog</td>
+                                </tr>
+                                <tr>
+                                    <th scope=row>$penguin</th>
+                                    <td></td>
+                                    <td>Sends you a random penguin.</td>
+                                    <td>$penguin</td>
+                                </tr>
+                                <tr>
+                                    <th scope=row>$image</th>
+                                    <td>[QUERY]</td>
+                                    <td>Searches the image [QUERY] and sends it in chat.</td>
+                                    <td>$image Funny cats</td>
+                                </tr>
+                                <tr>
+                                    <th scope=row>$joke</th>
+                                    <td>(yomomma/chucknorris)</td>
+                                    <td>Sends you either a yomomma joke, Chuck Norris joke, or random joke (if there is no argument).</td>
+                                    <td>$joke chucknorris</td>
+                                </tr>
+                                <tr>
+                                    <th scope=row>$troll</th>
+                                    <td>[MIN]<br>[MAX]</td>
+                                    <td>Rolls a number between [MIN] and [MAX].</td>
+                                    <td>$troll 1 6</td>
+                                </tr>
+                                <tr>
+                                    <th scope=row>$thisserver</th>
+                                    <td></td>
+                                    <td>Shows your statistics for the server.</td>
+                                    <td>$thisserver</td>
+                                </tr>
+                                <tr>
+                                    <th scope=row>$userinfo</th>
+                                    <td>(@USER)</td>
+                                    <td>Gets the information for a specific user mentioned.</td>
+                                    <td>$userinfo @Hackzzila</td>
+                                </tr>
+                                <tr>
+                                    <th scope=row>$discriminator</th>
+                                    <td>(####)</td>
+                                    <td>Gets all of the users I have seen with the discriminator you supply.</td>
+                                    <td>$discriminator 7109</td>
+                                </tr>
+                                <tr>
+                                    <th scope=row>$8ball</th>
+                                    <td>[QUESTION]</td>
+                                    <td>Use the magic 8ball.</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                        <th scope=row>$bans</th>
+                                    <td></td>
+                                    <td>Sends you the list of people banned from the server you say it in. (Only works if bot has ability to see bans, Ban Member permission.)</td>
+                                    <td>$bans</td>
+                      </tr>
+                                <tr>
+                                    <th scope=row>$bots</th>
+                                    <td></td>
+                                    <td>Detects a list of other bots in the server.</td>
+                                    <td>$bots</td>
+                                </tr>
+                                <tr>
+                                    <th scope=row>$invite</th>
+                                    <td></td>
+                                    <td>Sends you his OAuth invite URL.</td>
+                                    <td>$invite</td>
+                                </tr>
+                                <tr>
+                                    <th scope=row>$stats</th>
+                                    <td></td>
+                                    <td>Shows the uptime, amount of servers I am in, and amount of users total of all of the servers.</td>
+                                    <td>$stats</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="bot-commander">
+                        [] = required, () = optional
+                        <table class=table>
+                    <thead>
+                      <tr>
+                        <th>Command</th>
+                                    <th>Parameters</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope=row>$say</th>
+                                    <td>[MESSAGE]</td>
+                                    <td>Makes TypicalBot say whatever you put in for [message].</td>
+                                    <td>$say I love Hackzzila</td>
+                      </tr>
+                                <tr>
+                        <th scope=row>$csay</th>
+                                    <td>[#CHANNEL]<br>[MESSAGE]</td>
+                                    <td>Makes TypicalBot say whatever you put in for [message] in the specificed channel.</td>
+                                    <td>$csay #general Hackzzila is the best person on Earth.</td>
+                      </tr>
+                                <tr>
+                        <th scope=row>$prune</th>
+                                    <td>[#]</td>
+                                    <td>Prunes the last [#] messages.</td>
+                                    <td>$prune 50</td>
+                      </tr>
+                                <tr>
+                        <th scope=row>$kick</th>
+                                    <td>[@USER]</td>
+                                    <td>Kicks [@USER].</td>
+                                    <td>$kick @TypicalModerator</td>
+                      </tr>
+                                <tr>
+                        <th scope=row>$softban</th>
+                                    <td>[@USER]</td>
+                                    <td>Soft bans [@USER]. (Ban + Remove Past Messages + Uban, similar to kick)</td>
+                                    <td>$softban @TypicalModerator</td>
+                      </tr>
+                                <tr>
+                        <th scope=row>$ban</th>
+                                    <td>[@USER]</td>
+                                    <td>Bans [@USER]</td>
+                                    <td>$ban @TypicalModerator</td>
+                      </tr>
+                                <tr>
+                        <th scope=row>$announce</th>
+                                    <td>[set/off]</td>
+                                    <td>Sets up a join/leave/ban announcement in the specificed channel.</td>
+                                    <td>$announce set</td>
+                      </tr>
+                                <tr>
+                        <th scope=row>$joinmessage</th>
+                                    <td>[set/off]<br>(message)</td>
+                                    <td>Sets up a join message to send to a user when they join your server.</td>
+                                    <td>$joinmessage set Welcome human!</td>
+                      </tr>
+                                <tr>
+                        <th scope=row>$antilink</th>
+                                    <td>[on/off]</td>
+                                    <td>Turn on or off an anti-link setting.</td>
+                                    <td>$antilink on</td>
+                      </tr>
+                                <tr>
+                        <th scope=row>$antiinvite</th>
+                                    <td>[on/off]</td>
+                                    <td>Turn on or off an anti-invite setting.</td>
+                                    <td>$antiinvite off</td>
+                      </tr>
+                                <tr>
+                        <th scope=row>$imageblock</th>
+                                    <td>[on/off]</td>
+                                    <td>Turn on or off an image block (Disallows people from searching bad things with the image command.)</td>
+                                    <td>$imageblock on</td>
+                      </tr>
+                                <tr>
+                        <th scope=row>$customprefix</th>
+                                    <td>[set/off]<br>(prefix)</td>
+                                    <td>Sets a custom prefix for your server to whatever you put for (prefix).</td>
+                                    <td>$customprefix set --</td>
+                      </tr>
+                                <tr>
+                        <th scope=row>$cprefix</th>
+                                    <td>[set/off]<br>(prefix)</td>
+                                    <td>Shortcut of $customprefix [set/off] (prefix)</td>
+                                    <td>$cprefix off</td>
+                      </tr>
+                                <tr>
+                        <th scope=row>$rolecolor</th>
+                                    <td>[#HEX]<br>[ROLE NAME]</td>
+                                    <td>Changes a role's color to the [HEX] color provided.</td>
+                                    <td>$rolecolor #ffffff Admins</td>
+                      </tr>
+                                <tr>
+                        <th scope=row>$role</th>
+                                    <td>[give/take]<br>[@user] <br>role_name]</td>
+                                    <td>Give/take a role from a player. (Use <&> instead of spaces in the role's name.)</td>
+                                    <td>$role give @Hackzzila Admins</td>
+                      </tr>
+                                <tr>
+                        <th scope=row>$leave</th>
+                                    <td></td>
+                                    <td>Makes TypicalBot leave a server.</td>
+                                    <td>$leave</td>
+                      </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+		</div>
+		<!--			END RIGHT COLUMN				-->
+		<!--
+		<footer class="footer">
+			<div class="container">
+				<div class="pull-right">
+					<a href="http://www.dmca.com/Protection/Status.aspx?ID=49a72875-38c8-4a25-9ff2-93242848fe5a" title="DMCA.com Protection Status" class="dmca-badge"> <img src="//images.dmca.com/Badges/dmca_protected_sml_120l.png?ID=49a72875-38c8-4a25-9ff2-93242848fe5a" alt="DMCA.com Protection Status"></a> <script src="//images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
+				</div>
+    			<p>Copyright &copy; 2016 Typical</p>
+			</div>
+		</footer>
+		-->
+	</body>
+</html>
+
+<script src="https://s.mlcdn.co/jquery.js"></script>
+<script src="https://s.mlcdn.co/bootstrap.js"></script>
+<script src="/stats.js"></script>

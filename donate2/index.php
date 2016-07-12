@@ -33,7 +33,6 @@
 			<ul class="nav nav-pills nav-stacked">
                 <li role="presentation" class=""><a href="/">Home</a></li>
                 <li role="presentation" class=""><a href="/commands/">Documentation</a></li>
-                <li role="presentation" class="active"><a>Thanks</a></li>
 			</ul>
 		</div>
 		<!--			END LEFT COLUMN					-->

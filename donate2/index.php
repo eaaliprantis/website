@@ -39,12 +39,16 @@
 		<!--			RIGHT COLUMN					-->
 		<div class="container col-md-10">
 			<!-- SLIDER -->
+			<form method='post' action='process.php?paypal=checkout'>
+				<input type='range' name='donateAmount' min='1' max='200' value='5' step='0.1'>
+				<input type="submit" name="submitName" value="Donate" />
+			</form>
 		</div>
         <hr class="hr-gray">
 		<footer class="footer">
 			<div class="container">
 	    		<p>Copyright &copy; 2016 HyperCoder</p>
-			</div>
+			</div>&
 		</footer>
 	</body>
 </html>

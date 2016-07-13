@@ -40,8 +40,8 @@
 		<div class="container col-md-10">
 			<!-- SLIDER -->
 			<form method='post' action='process.php?paypal=checkout'>
-				<input type='range' name='donateAmount' min='1' max='200' value='5' step='0.1' oninput=sliderUpdate(this.value)>
-				<input type="submit" id='donate-btn' name="submitName" value="Donate" />
+				<input type='range' name='donateAmount' min='1' max='200' value='5' step='1' oninput="sliderUpdate(this.value)">
+				<input type="submit" id='donate-btn' name="submitName" value="Donate $5">
 			</form>
 		</div>
         <hr class="hr-gray">
@@ -57,14 +57,12 @@
 <script>
 	var $donateButton = $('#donate-btn');
 	var donateAmount = 5;
-	var CURRENT_AMOUNT = 0;
+	var CURRENT_AMOUNT = 5;
 	var currentAmount = CURRENT_AMOUNT;
-	function sliderUpdate(value)
-	{
-	    $donateButton.text("Donate" + " $" + Math.round(value));
+	function sliderUpdate(value) {
+	    $donateButton.prop("value", "Donate" + " $" + value);
 	    donateAmount = parseInt(value);
-	    if (init)
-	        currentAmount = CURRENT_AMOUNT + donateAmount;
+	    currentAmount = CURRENT_AMOUNT + donateAmount;
 	}
 </script>
 <script src="https://s.mlcdn.co/bootstrap.js"></script>
